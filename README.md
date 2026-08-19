@@ -3,10 +3,15 @@
 A browsable index of all **941 distinct visual styles** across the 1,000 video clips in the
 [ostris/minimax_h3_1k](https://huggingface.co/datasets/ostris/minimax_h3_1k) dataset.
 
-Each style entry shows the opening style descriptor from the clip's caption plus a still frame
-from the video. Styles are grouped into eight media categories (live-action cinematic, film stock
-& era looks, documentary & broadcast, amateur/found footage, 2D animation, stop-motion &
-puppetry, 3D/CG & game renders, and specialty imaging), with a live text filter for browsing.
+Each style entry shows a style descriptor plus a still frame from the video. The descriptor is the
+opening clause of the caption's `integrated_multimodal_description` field (the text before the first
+action beat) — it is not a separate annotation, just the lead-in of the clip's own prompt. Click the
+▸ arrow next to any clip number to expand its **full original prompt**: all three caption fields —
+`integrated_multimodal_description` (visual), `overall_soundscape`, and `non_diegetic_music` — with a
+one-click "Copy full prompt" button. Styles are grouped into eight media categories (live-action
+cinematic, film stock & era looks, documentary & broadcast, amateur/found footage, 2D animation,
+stop-motion & puppetry, 3D/CG & game renders, and specialty imaging), with a live text filter for
+browsing.
 
 ## Two ways to use it
 
